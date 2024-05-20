@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <script src="game.js" defer></script>
+    <style>
+        canvas {
+            border: 1px solid black;
+        }
+        #container {
+            display: flex;
+        }
+        #sidebar {
+            margin-left: 20px;
+        }
+		#startButton {
+			padding: 10px;
+			margin-bottom: 20px;
+		}
+    </style>
+</head>
+<body>
+    <div id="container">
+        <canvas id="gameCanvas" width="800" height="734"></canvas>
+		<audio id="yupi" src="snd/yippee-tbh.mp3"></audio>
+		<audio id="splash" src="snd/watersplash.mp3"></audio>
+		<audio id="gameover" src="snd/pacman-die.mp3"></audio>
+        <div id="sidebar">
+            <button id="startButton">Start</button>
+			<br>
+            <label id="livesLabel">Lives: </label>
+			<label id="lives">0</label>
+			<br>
+            <label id="scoreLabel">Score: </label>
+			<label id="score">0</label>
+        </div>
+    </div>
+</body>
+</html>
